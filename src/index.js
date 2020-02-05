@@ -2,19 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
-import Post from './components/post';
+import App from './components/App';
 
 ReactDOM.render(
-    <div className="container">
-        <div className="card card-default">
-            <div className="card-header">
-                <h1 className="card-title">Hellow, world</h1>
-            </div>
-            <Post texto="Olá, Mundo" title="Primeiro"/>
-            <Post texto="Eu sou o segundo Post" title="Segundo"/>
-            <Post texto="Eu sou o último Post" title="Terceiro"/>
-        </div>
-    </div>,
+    <App />,
     document.getElementById('root')
 );
 
