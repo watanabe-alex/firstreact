@@ -9,13 +9,14 @@ class App extends React.Component {
         super(props)
 
         this.state = {
-
             professionals: [
                 {
+                    id: 1,
                     name: "Wagner Venceslau",
                     github: "http://github.io/wagven"
                 },
                 {
+                    id: 2,
                     name: "Eduardo Rocha",
                     github: "http://github.io/eduroc"
                 }
@@ -26,15 +27,11 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className="container">
-                <h2>HELLO WORLD!</h2>
-                <Post texto="Olá, Mundo do compoment" title="Isso é um componente"/>
+            <div className="container my-5">
+                <h2>FIRST REACT - APP PROFESSIONALS</h2>
                 <br/>
-                <br/>
-                <br/>
-                <TableProfessionals professionals={this.state.professionals}/>
-                <br/>
-                <br/>
+                {/* <Post texto="Olá, Mundo do compoment" title="Isso é um componente"/> */}
+                <TableProfessionals data={this.state.professionals}/>
                 <br/>
                 <Form />
             </div>
